@@ -1,0 +1,53 @@
+.chakracontainer .charkrarotate {
+  width: 300px;
+  height: 300px;
+  animation: chakra 40s infinite linear;
+}
+
+@keyframes chakra {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.chakracontainer {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* width: 800px; */
+}
+.cardcontainer {
+  /* background-color: red; */
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  align-items: center;
+  border: 1px solid black;
+  height: 60px;
+  border-radius: 6px;
+  width: 220px;
+  /* margin-right: 180px; */
+}
+
+.cardcontainertwo {
+  /* background-color: red; */
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  align-items: center;
+  border: 1px solid black;
+  height: 60px;
+  border-radius: 6px;
+  width: 220px;
+  /* margin-left: 300px; */
+}
+
+.cardcontainer p {
+  margin-top: 12px;
+  margin-left: 28px;
+}
