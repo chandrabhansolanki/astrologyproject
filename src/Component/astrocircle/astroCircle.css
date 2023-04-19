@@ -24,6 +24,7 @@
 .cardcontainer {
   /* background-color: red; */
   display: flex;
+  justify-content: space-around;
   /* flex-direction: column; */
   /* justify-content: center; */
   align-items: center;
@@ -31,6 +32,7 @@
   height: 60px;
   border-radius: 6px;
   width: 220px;
+  margin-bottom: 10px;
   /* margin-right: 180px; */
 }
 
@@ -38,16 +40,29 @@
   /* background-color: red; */
   display: flex;
   /* flex-direction: column; */
-  /* justify-content: center; */
+  justify-content: space-around;
   align-items: center;
   border: 1px solid black;
   height: 60px;
   border-radius: 6px;
   width: 220px;
+  margin-bottom: 10px;
   /* margin-left: 300px; */
 }
 
 .cardcontainer p {
   margin-top: 12px;
-  margin-left: 28px;
+  /* margin-left: 28px; */
+}
+.cardcontainertwo p {
+  margin-top: 12px;
+  /* margin-left: 10px; */
+}
+
+.mainCardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+
 }

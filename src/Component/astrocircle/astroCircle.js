@@ -12,7 +12,7 @@ const astroCircle = () => {
         </p>
       </div>
 
-      <div style={{ display: "flex", alignItems:'center' }}>
+      <div  className='mainCardContainer'>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div className="cardcontainer">
             <img src={avatar} style={{ height: "40px", width: "40px" }} />
@@ -36,20 +36,20 @@ const astroCircle = () => {
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div className="cardcontainertwo">
-            <img src={avatar} style={{ height: "40px", width: "40px" }} />
             <p>Money problem</p>
+            <img src={avatar} style={{ height: "40px", width: "40px" }} />
           </div>
           <div className="cardcontainertwo">
-            <img src={avatar} style={{ height: "40px", width: "40px" }} />
             <p>Money problem</p>
+            <img src={avatar} style={{ height: "40px", width: "40px" }} />
           </div>
           <div className="cardcontainertwo">
-            <img src={avatar} style={{ height: "40px", width: "40px" }} />
             <p>Money problem</p>
+            <img src={avatar} style={{ height: "40px", width: "40px" }} />
           </div>
           <div className="cardcontainertwo">
-            <img src={avatar} style={{ height: "40px", width: "40px" }} />
             <p>Money problem</p>
+            <img src={avatar} style={{ height: "40px", width: "40px" }} />
           </div>
         </div>
       </div>
