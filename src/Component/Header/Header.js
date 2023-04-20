@@ -7,6 +7,7 @@ import "./Header.css";
 // import OTPModal from "../Login/OTPModal";
 import { backgroundImage, avatar } from "../../images/images";
 import Slider from "../Slider/Slider";
+import { logo } from "../../images/images";
 
 const Header = () => {
   const [login, setLogin] = useState();
@@ -27,7 +28,8 @@ const Header = () => {
         >
           <div class="container-fluid">
             <a class="navbar-brand text-white" href="#">
-              Guruji
+              <img src={logo}  style={{height:'66.25px',width:'232px' ,objectFit:'contain'}}/>
+              {/* Guruji */}
             </a>
             <button
               class="navbar-toggler"
@@ -96,6 +98,7 @@ const Header = () => {
             style={{
               textAlign:"center",
               color:"white",
+             
 
               // display: "flex",
               // justifyContent: "center",
@@ -103,19 +106,21 @@ const Header = () => {
               // flexDirection: "column",
             }}
           >
-            <h1 >"Astrology for Clarity"</h1>
-            <p >
-              {" "}
+            <h1 className="title">"Astrology for Clarity"</h1>
+            <p className="detail">
               Your Name is a Vedic Astrologer and has expertise in Vasstu and
               Mantra Theraphy.
             </p>
             <button
-              class="bg-primary"
+              // class="bg-primary"
               style={{
-                height: "50px",
-                width: "140px",
-                borderRadius: "8px",
+                height: "58.82px",
+                width: "217px",
+                borderRadius: "43px",
                 border: "none",
+                backgroundColor:'#D97122',
+                color:'white',
+                marginTop:'40px'
               }}
             >
               Contact Now

@@ -9,9 +9,9 @@
 }
 
 .backgroundImage {
-  height: 700px;
+  height: 580px;
   width: 100%;
-  background: linear-gradient(0deg, rgba(103, 103, 124, 0.3), rgba(104, 89, 89, 0.3)) ,url('../../assets/astro.jpg');
+  background: linear-gradient(0deg, rgba(103, 103, 124, 0.3), rgba(104, 89, 89, 0.3)) ,url('../../assets/dashboardbackground.png');
   /* background-color: rgba(255,255,255,0); */
   /* opacity: 0.5; */
   background-size: 100% 100%;
@@ -31,4 +31,25 @@
 }
 .navbar-expand-lg .navbar-collapse{
   justify-content: center !important;
+}
+.title{
+  font-weight: 700;
+  font-size: 58.4px;
+  line-height: 128%;
+  color: #FDFDFD;
+  font-family: 'Sansation';
+  font-style: normal;
+  text-align: center;
+  /* width: 724px;
+  height: 75px; */
+}
+
+.detail{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 149.69%;
+  color: #FDFDFD;
+  font-family: 'Poppins';
+  font-style: normal;
+  text-align: center;
 }
