@@ -3,14 +3,22 @@
   justify-content: center;
   /* align-items: center; */
   width: 1224px;
-  height: 1768px;
+  /* height: 1768px; */
   /* border: 2px solid red; */
-  margin: 10px 0px 140px 0px;
+  /* margin: 10px 0px 140px 0px; */
   position: relative;
   background: url("../../assets/cardBackground.png");
   background-size: 100% 100%;
 
   background-repeat: no-repeat;
+}
+
+.imageswipercontainer {
+  width: 100% !important;
+  height: 100% !important;
+}
+.positioncontainer {
+  margin-top: 40px;
 }
 
 .allCardsContainer {
@@ -27,8 +35,8 @@
   display: flex;
   flex-direction: column;
   width: 346px;
-  height: 461px;
-
+  height: 463px;
+  padding-top: 40px;
   border-radius: 8px;
   position: relative;
 }
@@ -38,6 +46,7 @@
   margin-left: 10px;
   width: 95%;
   color: #fff;
+  margin-bottom: 16px;
   /* top: 0;
   left: 0;
   height: 100%;
@@ -71,10 +80,9 @@
   padding: 0;
 }
 
-.card-data h4{
-    font-size: 16px;
-    font-weight: 500;
-
+.card-data h4 {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .card-data h6 {
@@ -89,9 +97,37 @@
   text-overflow: ellipsis;
   margin: 5px, 0;
 }
-.experience{
-    position: absolute;
-    margin-top: 19px;
-    margin-left: 19px;
-    margin-right: 16px;
+.experience {
+  position: absolute;
+  margin-top: 19px;
+  margin-left: 19px;
+  margin-right: 16px;
 }
+
+.buttonContianer {
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 57.16px;
+  background-color: #A95210;
+ /* position: absolute;
+  bottom: 0; */
+  width: 50%;
+  margin: 0;
+  border-bottom-left-radius: 8px;
+}
+.buttonContianertwo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  height: 57.16px;
+  background-color: #A95210;
+ /* position: absolute;
+  bottom: 0; */
+  width: 50%;
+  margin: 0;
+  border-bottom-right-radius: 8px;
+}
+

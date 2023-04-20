@@ -1,5 +1,6 @@
 import React from "react";
 import "./Slider.css";
+import { video1, video2, video3, video4, video5 ,banner } from "../../images/images";
 
 // import React, { useRef, useState } from "react";
 // Import Swiper React components
@@ -15,33 +16,33 @@ import { Autoplay, EffectCoverflow, Navigation, Pagination } from "swiper";
 const Slider = () => {
   const images = [
     {
-      image: "https://swiperjs.com/demos/images/nature-1.jpg",
+      image: video3,
     },
     {
-      image: "https://swiperjs.com/demos/images/nature-2.jpg",
+      image: video2,
     },
     {
-      image: "https://swiperjs.com/demos/images/nature-3.jpg",
+      image: video1,
     },
     {
-      image: "https://swiperjs.com/demos/images/nature-4.jpg",
+      image: video4,
     },
     {
-      image: "https://swiperjs.com/demos/images/nature-5.jpg",
+      image: video5,
     },
-    {
-      image: "https://swiperjs.com/demos/images/nature-6.jpg",
-    },
-    {
-      image: "https://swiperjs.com/demos/images/nature-7.jpg",
-    },
-    {
-      image: "https://swiperjs.com/demos/images/nature-8.jpg",
-    },
+    // {
+    //   image: "https://swiperjs.com/demos/images/nature-6.jpg",
+    // },
+    // {
+    //   image: "https://swiperjs.com/demos/images/nature-7.jpg",
+    // },
+    // {
+    //   image: "https://swiperjs.com/demos/images/nature-8.jpg",
+    // },
   ];
 
   return (
-    <>
+    <div style={{backgroundColor:"#FFEFE3" ,width: "1224px", margin:'auto'}}>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -64,13 +65,22 @@ const Slider = () => {
         className="mySwiper"
       >
         {images.map((item) => (
-          <SwiperSlide className="relative" style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+          <SwiperSlide
+            className="relative"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <img src={item.image} alt="image" />
-            <img src={play} className="play"/>
+            <img src={play} className="play" />
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+
+     
+    </div>
   );
 };
 
