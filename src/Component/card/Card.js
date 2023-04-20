@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   image1,
   image2,
@@ -119,7 +120,7 @@ const card = [
   {
     id: 4,
     image: image4,
-    name: "chandra bhan singh solanki sdf sdf sdf sfds sdf s",
+    name: "chandra ",
     specalist: "specalist",
     love: "Love, Business, Life ",
     skills: "Skills",
@@ -128,6 +129,9 @@ const card = [
     amount: "₹10/min",
     year: "10+ Years",
   },
+
+ 
+  
 ];
 
 const data = [
@@ -146,6 +150,13 @@ const data = [
 ];
 
 const Card = () => {
+  let count = 1;
+  const checkNumber = (index) => {
+    if (index == count) {
+      count = count + 3;
+    }
+  };
+
   return (
     <div
       style={{
@@ -182,11 +193,13 @@ const Card = () => {
       <div className="mainContainer">
         <div className="allCardsContainer ">
           {card?.map((item, index) => {
+
+            
             return (
               <div
                 key={item?.id}
                 className={
-                  index === 1 || index === 4 || index === 7
+                  index == count
                     ? "cardContainer positioncontainer"
                     : "cardContainer"
                 }
@@ -277,6 +290,7 @@ const Card = () => {
                     </span>
                   </div>
                 </div>
+                {/* {checkNumber(index)} */}
               </div>
             );
           })}

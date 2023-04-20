@@ -4,6 +4,7 @@ import Header from "./Component/Header/Header";
 import Slider from "./Component/Slider/Slider";
 import AstroCircle from "./Component/astrocircle/astroCircle";
 import Card from "./Component/card/Card";
+// import ReviewCarousel from "./Component/Review/Review";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Slider />
       <Card />
       <AstroCircle />
+      {/* <ReviewCarousel /> */}
     </div>
   );
 }

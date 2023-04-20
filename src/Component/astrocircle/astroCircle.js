@@ -10,6 +10,7 @@ import {
   education,
 } from "../../images/images";
 
+
 const astroCircle = () => {
   return (
     <div
