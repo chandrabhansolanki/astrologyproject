@@ -42,7 +42,7 @@ const Slider = () => {
   ];
 
   return (
-    <div style={{backgroundColor:"#FFEFE3" ,width: "1224px", margin:'auto'}}>
+    <div style={{backgroundColor:"#FFEFE3" , marginLeft:'80px', marginRight:'80px'}}>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -56,13 +56,13 @@ const Slider = () => {
           slideShadows: true,
         }}
         // loop={true}
-        autoplay={{
-          delay: 1000,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 1000,
+        //   disableOnInteraction: false,
+        // }}
         navigation={true}
         modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-        className="mySwiper"
+        className="mySwiper allswipercontainer"
       >
         {images.map((item) => (
           <SwiperSlide
@@ -71,9 +71,11 @@ const Slider = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              height:'390px',
+              width:'286px',
             }}
           >
-            <img src={item.image} alt="image" />
+            <img src={item.image} alt="image" className='selectImage' />
             <img src={play} className="play" />
           </SwiperSlide>
         ))}

@@ -1,11 +1,18 @@
+.slideMainContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 80px;
+  margin-right: 80px;
+
+}
+
+
 .mainContainer {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  width: 1224px;
-  /* height: 1768px; */
-  /* border: 2px solid red; */
-  /* margin: 10px 0px 140px 0px; */
+  width: 100%;
   position: relative;
   background: url("../../assets/cardBackground.png");
   background-size: 100% 100%;
@@ -25,18 +32,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-top: 40px;
 }
 
-/* .mainContainer .swiper::-webkit-scrollbar {
-  display: none;
-} */
 
 .cardContainer {
   display: flex;
   flex-direction: column;
   width: 346px;
   height: 463px;
-  padding-top: 40px;
+  /* padding-top: 40px; */
   border-radius: 8px;
   position: relative;
 }
@@ -47,18 +52,7 @@
   width: 95%;
   color: #fff;
   margin-bottom: 16px;
-  /* top: 0;
-  left: 0;
-  height: 100%;
-  object-fit: cover !important;
-  color: #fff;
-  opacity: 0;
-  transition: 0.5s;
-  transition-delay: 0.4s;
-  z-index: 1;
-  padding: 10px;
-  background: linear-gradient(to bottom, rgba(4, 8, 15, 0), #192133 90%); */
-  /* border: 2px solid red; */
+ 
 }
 
 .card-data h2 {
@@ -67,11 +61,6 @@
   text-transform: capitalize;
   width: 100%;
   margin-top: 225px;
-  /* color: #fff; */
-  /* max-height: 18px; */
-  /* text-overflow: ellipsis; */
-  /* opacity: 0.8; */
-  /* white-space: nowrap; */
 }
 .card-data p {
   font-size: 14px;
@@ -105,29 +94,40 @@
 }
 
 .buttonContianer {
-  /* text-align: center; */
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 57.16px;
   background-color: #A95210;
- /* position: absolute;
-  bottom: 0; */
   width: 50%;
   margin: 0;
   border-bottom-left-radius: 8px;
 }
 .buttonContianertwo {
+cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* text-align: center; */
   height: 57.16px;
   background-color: #A95210;
- /* position: absolute;
-  bottom: 0; */
   width: 50%;
   margin: 0;
   border-bottom-right-radius: 8px;
 }
 
+.chatbutton{
+  color: #FDFDFD;
+  padding-left: 8px;
+  font-size: 18px;
+  font-weight: 700,
+}
+
+.livecallbutton{
+  height: 66.73px;
+  width: 66.73px;
+  position: absolute;
+  bottom: 15px;
+  left: 42%;
+  z-index: 5;
+}

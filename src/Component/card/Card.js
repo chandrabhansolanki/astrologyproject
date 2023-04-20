@@ -129,9 +129,6 @@ const card = [
     amount: "₹10/min",
     year: "10+ Years",
   },
-
- 
-  
 ];
 
 const data = [
@@ -158,21 +155,14 @@ const Card = () => {
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
+    <div className="slideMainContainer">
       <Swiper
         spaceBetween={30}
         pagination={{
           dynamicBullets: true,
         }}
         modules={[Pagination]}
-        style={{ width: "1224px", height: "356px" }}
+        style={{ width: "100%", height: "356px", objectFit: "contain" }}
         className="mySwiper"
       >
         {data?.map((item) => (
@@ -236,17 +226,7 @@ const Card = () => {
                     </div>
                   </div>
                 </div>
-                <img
-                  src={livecall}
-                  style={{
-                    height: "66.73px",
-                    width: "66.73px",
-                    position: "absolute",
-                    bottom: 15,
-                    left: "42%",
-                    zIndex: 5,
-                  }}
-                />
+                <img src={livecall} className="livecallbutton" />
                 <div
                   style={{
                     position: "absolute",
@@ -260,32 +240,14 @@ const Card = () => {
                       src={message}
                       style={{ height: "21.56px", width: "21.5px" }}
                     />
-                    <span
-                      style={{
-                        color: "#FDFDFD",
-                        paddingLeft: "8px",
-                        fontSize: "18px",
-                        fontWeight: 700,
-                      }}
-                    >
-                      Chat
-                    </span>
+                    <span className="chatbutton">Chat</span>
                   </div>
                   <div className="buttonContianertwo">
                     <img
                       src={call}
                       style={{ height: "21.56px", width: "21.5px" }}
                     />
-                    <span
-                      style={{
-                        color: "#FDFDFD",
-                        paddingLeft: "8px",
-                        fontSize: "18px",
-                        fontWeight: 700,
-                      }}
-                    >
-                      Call
-                    </span>
+                    <span className="chatbutton">Call</span>
                   </div>
                 </div>
                 {checkNumber(index)}
@@ -294,11 +256,11 @@ const Card = () => {
           })}
         </div>
       </div>
-      <div>
+      <div style={{ width: "100%" }}>
         <img
           src={bottomframe}
           alt="banner"
-          style={{ height: "60px", width: "1224px" }}
+          style={{ height: "60px", width: "100%" }}
         />
       </div>
     </div>

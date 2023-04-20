@@ -38,7 +38,7 @@ export default class CenterMode extends Component {
       prevArrow: <SamplePrevArrow />
     };
     return (
-      <div style={{width :'1224px', display:'flex',justifyContent:'center',flexDirection:'column'}}>
+      <div style={{width :'100%', display:'flex',justifyContent:'center',flexDirection:'column'}}>
         {/* <h2>Center Mode</h2> */}
         <Slider {...settings} >
           <div>

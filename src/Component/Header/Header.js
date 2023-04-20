@@ -1,34 +1,33 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
-// import logo from "../Images/hotstarlogo.svg";
 import "./Header.css";
-// import Login from "../Login/Login";
-// import PhoneNumber from "../Login/PhoneNumberModal";
-// import OTPModal from "../Login/OTPModal";
-import { backgroundImage, avatar } from "../../images/images";
-import Slider from "../Slider/Slider";
-import { logo } from "../../images/images";
+import {
+  avatar,
+  logo,
+  secure,
+  customer,
+  privates,
+  refund,
+  verified,
+} from "../../images/images";
 
 const Header = () => {
-  const [login, setLogin] = useState();
-
-  // console.log(login, "login");
-
-  const clickHandler = (a) => {
-    // alert("hello")
-    setLogin(a);
-  };
   return (
     <div>
-      <div style={{}} className="backgroundImage">
-        
+      <div className="backgroundImage">
         <nav
           class="navbar navbar-expand-lg  navbarstyle"
           // style={{ position: "absolute", top: 0, width: "100%" }}
         >
           <div class="container-fluid">
             <a class="navbar-brand text-white" href="#">
-              <img src={logo}  style={{height:'66.25px',width:'232px' ,objectFit:'contain'}}/>
+              <img
+                src={logo}
+                style={{
+                  height: "66.25px",
+                  width: "232px",
+                  objectFit: "contain",
+                }}
+              />
               {/* Guruji */}
             </a>
             <button
@@ -46,7 +45,7 @@ const Header = () => {
               <ul class="navbar-nav ">
                 <li class="nav-item">
                   <a
-                    class="nav-link active text-white"
+                    class="nav-link active text-white home"
                     aria-current="page"
                     href="#"
                   >
@@ -87,23 +86,14 @@ const Header = () => {
           style={{
             display: "flex",
             justifyContent: "center",
-            height: "100%",
-            alignItems:'center',
-            // position: "absolute",
-            // top: 200,
-            // left: 600,
+            marginBottom: "104px",
+            marginTop: "60px",
           }}
         >
           <div
             style={{
-              textAlign:"center",
-              color:"white",
-             
-
-              // display: "flex",
-              // justifyContent: "center",
-              // alignItems: "center",
-              // flexDirection: "column",
+              textAlign: "center",
+              color: "white",
             }}
           >
             <h1 className="title">"Astrology for Clarity"</h1>
@@ -111,24 +101,27 @@ const Header = () => {
               Your Name is a Vedic Astrologer and has expertise in Vasstu and
               Mantra Theraphy.
             </p>
-            <button
-              // class="bg-primary"
-              style={{
-                height: "58.82px",
-                width: "217px",
-                borderRadius: "43px",
-                border: "none",
-                backgroundColor:'#D97122',
-                color:'white',
-                marginTop:'40px'
-              }}
-            >
-              Contact Now
-            </button>
+            <button className="contactbutton">Contact Now</button>
+          </div>
+        </div>
+        <div className="customercarecontainer">
+          <div>
+            <img src={customer} />
+          </div>
+          <div>
+            <img src={refund} />
+          </div>
+          <div>
+            <img src={privates} />
+          </div>
+          <div>
+            <img src={verified} />
+          </div>
+          <div>
+            <img src={secure} />
           </div>
         </div>
       </div>
-      {/* <Slider /> */}
     </div>
   );
 };
