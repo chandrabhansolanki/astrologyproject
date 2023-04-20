@@ -1,40 +1,72 @@
-// import React, { Component } from "react";
-// import Slider from "react-slick";
+import React, { Component } from "react";
+import Slider from "react-slick";
+import { review1,review2,review3,review6 } from "../../images/images";
 
-// export default class CenterMode extends Component {
-//   render() {
-//     const settings = {
-//       className: "center",
-//       centerMode: true,
-//       infinite: true,
-//       centerPadding: "60px",
-//       slidesToShow: 3,
-//       speed: 500
-//     };
-//     return (
-//       <div style={{display:'flex', justifyContent:'center' , alignItems:'center', overflow:'hidden'}}>
-//         <h2>Center Mode</h2>
-//         <Slider {...settings} style={{backgroundColor:'green', height:"300px", maxWidth:"800px"}}>
-//           <div style={{backgroundColor:'red' , height:'50px', width:'100px'}}>
-//             <h3>1</h3>
-//           </div>
-//           <div style={{backgroundColor:'pink',height:'50px', width:'100px'}}>
-//             <h3>2</h3>
-//           </div>
-//           <div style={{backgroundColor:'yellow',height:'50px', width:'100px'}}>
-//             <h3>3</h3>
-//           </div>
-//           <div style={{backgroundColor:'yellow',height:'50px', width:'100px'}}>
-//             <h3>4</h3>
-//           </div>
-//           <div style={{backgroundColor:'yellow',height:'50px', width:'100px'}}>
-//             <h3>5</h3>
-//           </div>
-//           <div style={{backgroundColor:'yellow',height:'50px', width:'100px'}}>
-//             <h3>6</h3>
-//           </div>
-//         </Slider>
-//       </div>
-//     );
-//   }
-// }
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "black", marginRight:'50px' }}
+        onClick={onClick}
+      />
+    );
+  }
+  
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "black", marginLeft:'50px' }}
+        onClick={onClick}
+      />
+    );
+  }
+export default class CenterMode extends Component {
+  render() {
+    const settings = {
+      className: "center",
+      centerMode: true,
+      infinite: true,
+      centerPadding: "60px",
+      slidesToShow: 3,
+      speed: 100,
+      focusOnSelect: true,
+      slidesToScroll: 1,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />
+    };
+    return (
+      <div style={{width :'1224px', display:'flex',justifyContent:'center',flexDirection:'column'}}>
+        {/* <h2>Center Mode</h2> */}
+        <Slider {...settings} >
+          <div>
+            {/* <h3>1</h3> */}
+            <img src={review1} style={{height:'86px', width:'86px'}}/>
+          </div>
+          <div>
+            {/* <h3>2</h3> */}
+            <img src={review2} style={{height:'86px', width:'86px'}}/>
+          </div>
+          <div>
+            {/* <h3>3</h3> */}
+            <img src={review3} style={{height:'86px', width:'86px'}}/>
+          </div>
+          <div>
+            {/* <h3>4</h3> */}
+            <img src={review6}  style={{height:'172px', width:'172px'}}/>
+          </div>
+          <div>
+            {/* <h3>5</h3> */}
+            <img src={review1} style={{height:'86px', width:'86px'}}/>
+          </div>
+          <div>
+            {/* <h3>6</h3> */}
+            <img src={review2} style={{height:'86px', width:'86px'}}    />
+          </div>
+        </Slider>
+      </div>
+    );
+  }
+}

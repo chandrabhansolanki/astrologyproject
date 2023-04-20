@@ -193,8 +193,6 @@ const Card = () => {
       <div className="mainContainer">
         <div className="allCardsContainer ">
           {card?.map((item, index) => {
-
-            
             return (
               <div
                 key={item?.id}
@@ -290,7 +288,7 @@ const Card = () => {
                     </span>
                   </div>
                 </div>
-                {/* {checkNumber(index)} */}
+                {checkNumber(index)}
               </div>
             );
           })}
