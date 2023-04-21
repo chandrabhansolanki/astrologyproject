@@ -51,15 +51,15 @@ const Slider = () => {
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 200,
+          depth: 400,
           modifier: 1,
           slideShadows: true,
         }}
         // loop={true}
-        // autoplay={{
-        //   delay: 1000,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
         navigation={true}
         modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
         className="mySwiper allswipercontainer"
