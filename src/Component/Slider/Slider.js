@@ -71,8 +71,8 @@ const Slider = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              height:'390px',
-              width:'286px',
+              // objectFit:'cover',
+            
             }}
           >
             <img src={item.image} alt="image" className='selectImage' />

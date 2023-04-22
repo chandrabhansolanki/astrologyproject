@@ -9,8 +9,9 @@
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 300px !important;
-  height: 300px !important;
+  width: 286px !important;
+  height: 350px !important;
+
 }
 
 .swiper-slide img {
@@ -66,4 +67,5 @@ width: 40px !important;
   /* background-color: red; */
   /* padding-left: 555px;
   padding-right: 555px; */
+  /* height: 600px; */
 }
